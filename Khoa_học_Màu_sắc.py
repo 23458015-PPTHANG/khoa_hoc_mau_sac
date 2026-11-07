@@ -4,8 +4,8 @@ import streamlit as st
 st.set_page_config(page_title="Khoa học Màu sắc", layout="wide")
 
 # Đường dẫn logo: đặt 2 file ảnh vào thư mục "images" cạnh file này
-LOGO_TRUONG = "images/logo_hcmute.png"
-LOGO_KHOA = "images/logo_khoa.png"
+logo_truong = "images/logo_truong.png"
+logo_khoa = "images/logo_khoa.png"
 
 
 def hien_logo(duong_dan, ten):
@@ -18,7 +18,7 @@ def hien_logo(duong_dan, ten):
 col_trai, col_giua, col_phai = st.columns([1, 4, 1])
 
 with col_trai:
-    hien_logo(LOGO_TRUONG, "logo trường")
+    hien_logo(logo_truong, "logo trường")
 
 with col_giua:
     st.markdown(
@@ -33,11 +33,11 @@ with col_giua:
     )
 
 with col_phai:
-    hien_logo(LOGO_KHOA, "logo khoa")
+    hien_logo(logo_khoa, "logo khoa")
 
 st.divider()
 st.write("### Chào mừng bạn đến với project Khoa học Màu sắc của mình!")
-st.write("# Mình tên là Võ Tự Thanh, MaSV 22158139")
+st.write("# Mình tên là Phạm Phước Thắng MSSV 23458015")
 
 st.write("#### Nội dung trang web")
 st.markdown(
